@@ -1,0 +1,18 @@
+name: FarmWorld
+version: ${project.version}
+main: com.mike.farmworld.FarmWorldPlugin
+api-version: '1.21'
+author: Mike
+description: Erzeugt eine Custom-Farmwelt mit biomspezifischen Bäumen und Mini-Dungeons.
+
+commands:
+  farmworld:
+    description: Verwalte Farmwelten
+    usage: /farmworld <create|tp|list> [name]
+    permission: farmworld.admin
+    aliases: [fw]
+
+permissions:
+  farmworld.admin:
+    description: Erlaubt das Erstellen/Betreten von Farmwelten
+    default: op

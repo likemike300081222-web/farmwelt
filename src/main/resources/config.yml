@@ -1,0 +1,12 @@
+# Chance pro Chunk (0.0 - 1.0), dass an einer geeigneten Stelle ein Custom-Baum entsteht
+tree-chance-per-chunk: 0.35
+
+# Chance pro Chunk, dass darunter ein kleiner Dungeon generiert wird
+dungeon-chance-per-chunk: 0.02
+
+# Y-Bereich, in dem Dungeons gesucht werden (Untergrund)
+dungeon-min-y: -40
+dungeon-max-y: 10
+
+# Größe der Biom-Zonen in Blöcken (größer = größere zusammenhängende Flächen)
+biome-zone-size: 200
