@@ -1,6 +1,7 @@
 package com.mike.farmworld.generator;
 
 import org.bukkit.Material;
+import org.bukkit.generator.BlockPopulator;
 import org.bukkit.generator.ChunkGenerator;
 import org.bukkit.generator.WorldInfo;
 import org.jetbrains.annotations.NotNull;
