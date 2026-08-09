@@ -13,11 +13,6 @@ import org.bukkit.loot.LootTables;
 
 import java.util.Random;
 
-/**
- * Wird nur für Welten registriert, die mit FarmChunkGenerator erzeugt wurden.
- * Konfiguriert frisch generierte Spawner (Mob-Typ) und Truhen (Loot-Table),
- * da das beim reinen Blocksetzen im Generator/Populator nicht möglich ist.
- */
 public class DungeonSetupListener implements Listener {
 
     private static final EntityType[] HOSTILE_MOBS = {
@@ -30,7 +25,7 @@ public class DungeonSetupListener implements Listener {
         if (!event.isNewChunk()) return;
         Chunk chunk = event.getChunk();
 
-        for (org.bukkit.block.state.BlockState state : chunk.getTileEntities()) {
+        for (org.bukkit.block.BlockState state : chunk.getTileEntities()) {
             if (state instanceof CreatureSpawner spawner
                     && spawner.getSpawnedType() == null) {
                 EntityType type = HOSTILE_MOBS[random.nextInt(HOSTILE_MOBS.length)];
